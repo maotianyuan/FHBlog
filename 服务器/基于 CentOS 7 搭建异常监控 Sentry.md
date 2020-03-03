@@ -164,6 +164,7 @@ yum install git
 
 通过 IP:9000 即可成功访问，用之前创建的账号即可登陆。
 ```shell
+docker-compose stop // 关闭
 docker-compose up -d
 ```
 
