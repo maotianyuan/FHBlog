@@ -4,7 +4,7 @@
 
 
 <a name="yh7u6"></a>
-# call
+## call
 > call 修改 this 指向，并执行当前函数
 
 - 实例
@@ -81,7 +81,7 @@ a.call.call.call(b) // 打印出 b, 让 b 执行 【当前函数执行后，a.ca
 ```
 
 <a name="3LyW7"></a>
-# apply
+## apply
 > apply 修改 this 指向，与 call 区别仅在于参数传递方式
 
 - 实例
@@ -137,7 +137,7 @@ Function.prototype._apply = function (context = window, args) {
 ```
 
 <a name="896SR"></a>
-# bind
+## bind
 > bind 修改 this 指向，与 call、apply 区别在于，bind调用返回的是一个新函数，如果被 new ，当前函数的 this 是实例；new 出来结果可以找到原有类的原型；
 
 - 实例
@@ -236,7 +236,7 @@ console.log(fn.getDog)
 ```
 
 <a name="LRiWy"></a>
-# 原型 / 构造函数 / 实例
+## 原型 / 构造函数 / 实例
 > 为方便下面对 new instanceof 理解，需要提前对原型链有深的理解和实例、构造函数、原型对象之间的关系的理解
 
 ```javascript
@@ -279,7 +279,7 @@ console.log(o3.__proto__ === O3.prototype)
 ```
 
 <a name="fdMB2"></a>
-# new
+## new
 > 构造函数的实现创建对象
 > 属性创建，原型方法创建
 
@@ -302,7 +302,7 @@ console.log(cat)
 ```
 
 <a name="uIeMo"></a>
-# instanceof
+## instanceof
 > 在看具体实现之前，你需要提前对原型链有深刻理解
 
 - 模拟实现
@@ -325,9 +325,9 @@ function _instanceof (left, right) {
 
 
 <a name="teXBV"></a>
-# 继承
+## 继承
 <a name="vMSNC"></a>
-## call
+#### call
 > 子类无法继承父类的原型 prototype 的方法
 
 ```javascript
@@ -348,7 +348,7 @@ var cat = new Cat('first')
 ```
 
 <a name="NGKez"></a>
-## 原型链
+#### 原型链
 > 子类可以引用父类的实例属性，但是需要绑定的时候，传值，否则为undefined，灵活度不高, 不同实例中属性值改变会相互影响 原因：原型链的对象不同实例中是共用的既：cat1.**proto**.name = 'cat1' 一改都改
 
 
@@ -373,7 +373,7 @@ var cat2 = new Cat('cat2')
 ```
 
 <a name="QXKbC"></a>
-## 组合模式-寄生
+#### 组合模式-寄生
 
 ```javascript
 function Animate(name) {
@@ -399,7 +399,7 @@ var cat = new Cat('first', 'cat')
 ```
 
 <a name="8RUZS"></a>
-## ES6
+#### ES6
 
 ```javascript
 class Animate {
@@ -419,5 +419,5 @@ class Cat extends Animate {
 ```
 
 <a name="yIhmM"></a>
-# 工具
+## 工具
 [JSBin](https://jsbin.com/) 模拟练习
