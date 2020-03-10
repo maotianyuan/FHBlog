@@ -21,11 +21,15 @@ module.exports = {
             },
             {
                 text: 'Vue',
-                link: '/vue/Vuex 原理',
+                items: [
+                    { text: '源码', link: '/vue/源码/一、Vue 源码之数据劫持' },
+                    { text: 'vuex', link: '/vue/vuex' },
+                    { text: 'vue-router', link: '/vue/vue-router' },
+                ],
             },
             {
                 text: 'JS',
-                link: '/js/JavaScript 中的模拟实现',
+                link: '/js/JavaScript 原生方法模拟实现',
             },
             {
                 text: '浏览器',
@@ -42,19 +46,36 @@ module.exports = {
         ],
 
         sidebar: {
-            '/vue/': [{
-                title: 'Vue',
+            '/vue/源码/': [{
+                title: '源码',
                 collapsable: true,
                 children: [
-                    'Vuex 原理',
-                    'vue-router 原理'
+                    '一、Vue 源码之数据劫持',
+                    '二、Vue 源码之依赖收集和批量更新',
+                    '三、Vue 源码之 watch 和 computed'
+                ]
+            }],
+            '/vue/': [{
+                title: 'vuex',
+                collapsable: true,
+                children: [
+                    'Vuex',
+                ]
+            }],
+            '/vue/': [{
+                title: 'vue-router',
+                collapsable: true,
+                children: [
+                    'vue-router'
                 ]
             }],
             '/js/': [{
                 title: 'JS',
                 collapsable: true,
                 children: [
-                    'JavaScript 中的模拟实现',
+                    'JavaScript 原生方法模拟实现',
+                    'JavaScript 工具方法模拟实现',
+                    'Promise 模拟实现',
                 ]
             }],
             '/浏览器/': [{
