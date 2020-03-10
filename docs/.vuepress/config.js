@@ -56,16 +56,10 @@ module.exports = {
                 ]
             }],
             '/vue/': [{
-                title: 'vuex',
+                title: 'Vue',
                 collapsable: true,
                 children: [
-                    'Vuex',
-                ]
-            }],
-            '/vue/': [{
-                title: 'vue-router',
-                collapsable: true,
-                children: [
+                    'vuex',
                     'vue-router'
                 ]
             }],
