@@ -5,7 +5,6 @@ if [ "$ROT_TOKEN" = "" ]; then
   exit 0
 fi
 
-git clone https://$ROT_TOKEN@github.com/ReliaMM/FHBlog.git
 npm run docs: build
 cd dist
 
