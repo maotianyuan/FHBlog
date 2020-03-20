@@ -5,7 +5,8 @@ if [ "$ROT_TOKEN" = "" ]; then
   exit 0
 fi
 
-npm run docs: build
+npm run docs:build
+
 cd dist
 
 git init
