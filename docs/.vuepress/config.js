@@ -92,6 +92,7 @@ module.exports = {
                 collapsable: true,
                 children: [
                     '基于 CentOS 7 搭建异常监控 Sentry',
+                    'GitLab CI_CD 自动部署构建',
                 ]
             }]
         },
