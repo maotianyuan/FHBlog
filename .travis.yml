@@ -10,4 +10,5 @@ before_script:
   - chmod 777 ./deploy.sh
 script:
   - ./deploy.sh
+  
 branch: master
