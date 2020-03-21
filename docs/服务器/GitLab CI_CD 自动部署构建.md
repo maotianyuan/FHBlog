@@ -4,6 +4,7 @@
 每次改完需求之后，更新到测试服务器都需要**手动**打包，并**上传**到服务器，多次人工干预操作，目前就有这样一个现成的基于 `GitLab CI` 工具，让我们**提交**或者**合并**代码后，就自动帮我们执行一段任务(打包、压缩、上传服务器)。从而实现自动上线。这里记录一下简单的步骤，因为每个人安装会面对不同的问题，后期有值得总结的，再补充。
 
 ## 二、Git Runner 介绍
+
 ### 是什么
 它是我们自动构建的主服务
 > Runner 是一个执行任务的进程。可以根据需要配置任意数量的 Runner。
@@ -225,7 +226,13 @@ ssh root@你的服务器地址
 ### 彩蛋
 ![image.png](https://cdn.nlark.com/yuque/0/2020/png/424608/1583990819638-48a611e9-d1b1-43c4-a58c-9b81d416db90.png#align=left&display=inline&height=423&name=image.png&originHeight=1576&originWidth=2780&size=320566&status=done&style=shadow&width=746)
 
-### 完整 yml 分享
+<base-title>
+::: slot title
+  <zr-title title="完整 yml 分享"></zr-title>
+:::
+</base-title>
+
+- .gitlab-1ci.yml
 
 ```shell
 image: node
@@ -286,8 +293,10 @@ deploy:
   script:
    - scp ./front-end-caiwu.tar root@$DEPLOY_SERVER_DEV:/data/frontEnd
    - ssh root@$DEPLOY_SERVER_DEV "cd /data/www/lighttpd/caiwu/public && rm -rf ./static/* && tar zxvf /data/frontEnd/front-end-caiwu.tar -C /data/www/lighttpd/caiwu/public && \cp ./static/index.html ../resources/views/welcome.blade.php"
-
 ```
+
+
+
 
 ### 坑
 
