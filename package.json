@@ -6,7 +6,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "local": "bash local.sh"
   },
   "directories": {
     "doc": "docs"
@@ -15,14 +15,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "core-js": "^2.6.11",
     "@vuepress/plugin-active-header-links": "^1.4.0",
     "@vuepress/plugin-back-to-top": "^1.3.1",
     "@vuepress/plugin-pwa": "^1.3.1",
     "@vuepress/plugin-google-analytics": "^1.4.0",
     "node-sass": "^4.13.1",
+    "zebra-view": "^0.1.0",
     "vuepress": "^1.3.1"
-  },
-  "dependencies": {
-    "zebra-view": "^0.1.0"
   }
 }
