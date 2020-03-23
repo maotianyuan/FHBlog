@@ -116,6 +116,12 @@ module.exports = {
                 buttonText: "刷新"
               }
             }
-          ]
+        ],
+        [
+            '@vuepress/google-analytics',
+            {
+              'ga': 'UA-161446938-1'
+            }
+        ]
     ]
 }
