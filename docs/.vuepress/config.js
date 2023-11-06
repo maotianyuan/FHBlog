@@ -1,8 +1,8 @@
 const path = require("path");
 
 module.exports = {
-    title: '风禾风禾呀',
-    description: '风禾风禾呀',
+    title: '风禾源泉',
+    description: '风禾源泉',
     dest: 'dist',
     serviceWorker: true,
     base: '/FHBlog/',
@@ -10,7 +10,7 @@ module.exports = {
         ['link', { rel: 'icon', href: '/assets/img/zebra-3.png' }]
     ],
     themeConfig: {
-        repo: "ReliaMM/FHBlog",
+        repo: "maotianyuan/FHBlog",
         docsDir: "docs",
         editLinks: true,
         editLinkText: "在 GitHub 上编辑此页",

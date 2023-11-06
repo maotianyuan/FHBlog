@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: assets/img/zebra-3.png
-heroText: 风禾风禾呀
-tagline: 风禾前端博客
+heroText: 风禾源泉
+tagline: 风禾源泉前端博客
 actionText: 点击进入 →
 actionLink: /vue/vuex
 features:

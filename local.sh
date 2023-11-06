@@ -8,6 +8,6 @@ git init
 git add -A .
 git commit -m 'deploy'
 
-git push -f git@github.com:ReliaMM/FHBlog.git master:gh-pages
+git push -f git@github.com:maotianyuan/FHBlog.git master:gh-pages
 
 

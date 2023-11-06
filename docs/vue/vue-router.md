@@ -579,7 +579,7 @@ class History {
 
 
 ## 最后
-上面实践代码在[这里](https://github.com/ReliaMM/FrontEndFramework/tree/master/vue/vueRouter)，我们来看下真正 vue-router 中 $router $route 有哪些东西吧。
+上面实践代码在[这里](https://github.com/maotianyuan/FrontEndFramework/tree/master/vue/vueRouter)，我们来看下真正 vue-router 中 $router $route 有哪些东西吧。
 
 - $router
 

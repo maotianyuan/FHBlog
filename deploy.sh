@@ -15,6 +15,6 @@ git config --global user.email "$GIT_EMAIL"
 git add -A .
 git commit -m 'deploy'
 
-git push -f https://$ROT_TOKEN@github.com/ReliaMM/FHBlog.git master:gh-pages
+git push -f https://$ROT_TOKEN@github.com/maotianyuan/FHBlog.git master:gh-pages
 
 
